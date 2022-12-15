@@ -11,9 +11,10 @@ const ProductCard = ({ product, button }) => {
 
     return (
         <div
-            className='shadow-lg rounded-3xl border  p-3 flex flex-col text-indigo-900'
+            className='shadow-lg relative rounded-3xl border  p-3 flex flex-col text-indigo-900'
             key={product._id}
         >
+            {pathname.includes('cart') && <span className=' absolute right-5 top-5 rounded-sm bg-indigo-700 p-2 text-white bolder'>{product.quantity}</span>}
             <div className='h-52 w-52 mx-auto'>
                 <img src={product?.image} alt={product?.model} />
             </div>

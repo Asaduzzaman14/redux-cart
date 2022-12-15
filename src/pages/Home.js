@@ -17,8 +17,8 @@ const Home = () => {
 
     return (
         <div>
-            <h2>Thi is home</h2>
-            <div className='grid grid-cols-2 gap-3 px-5'>
+            <h2 className='text-2xl py-3'>This is HOME</h2>
+            <div className='grid grid-cols-3 gap-3 px-5'>
                 {
                     products.map((product) => {
                         return (
